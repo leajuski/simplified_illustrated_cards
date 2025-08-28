@@ -1,33 +1,33 @@
 <template>
-  <div v-custom-font v-qr-code v-mini-size v-custom-size v-card-fourtyfour v-card-zero v-no-break v-print
-    v-logo v-customtitlediv v-linespacing v-linebreak v-text-direction v-co2-subscript id="app" class="reveal">
+  <div v-logo v-custom-font v-qr-code v-card-fourtyfour v-no-break v-print
+    v-customtitlediv v-linespacing v-linebreak v-text-direction v-co2-subscript id="app" class="reveal">
     <div class="slides">
       <FrontCard />
       <CardZero />
       <CardOne />
-      <CardFive />
-      <CardSeven />
-      <CardThirteen />
-      <CardTwentyOne />
-      <CardEighteen />
-      <CardTwentyTwo />
       <CardTwo />
       <CardThree />
       <CardFour />
+      <CardFive />
       <CardSix />
+      <CardSeven />
       <CardHeight />
       <CardNine />
+      <CardTen />
       <CardEleven />
       <CardTwelve />
-      <CardTwentyFour />
-      <CardTen />
+      <CardThirteen />
       <CardFourteen />
       <CardFifteen />
       <CardSixteen />
       <CardSeventeen />
+      <CardEighteen />
       <CardNineteen />
       <CardTwenty />
+      <CardTwentyOne />
+      <CardTwentyTwo />
       <CardTwentyThree />
+      <CardTwentyFour />
       <CardTwentyFive />
       <CardTwentySix />
       <CardTwentySeven />
@@ -173,7 +173,7 @@ export default {
   },
   methods: {
     adjustFontSize() {
-      const labels_max = [10, 0, 0, 0, 0, 5, 0, 4, 0, 0, 0, 2, 6, 5, 7, 20, 0, 0, 0, 4, 7, 9, 7, 0, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 5]
+      const labels_max = [2, 0, 0, 0, 0, 0, 0, 0, 0, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
       const labels = [];
       for (let card_id = 0; card_id <= labels_max.length - 1; card_id++) {
         let titleValue = {
@@ -182,9 +182,14 @@ export default {
         }
         labels.push(titleValue);
         if (card_id != 0 && card_id != 43 && card_id != 44) {
-          let titleBackValue = {
+          let contentBackValue = {
             container: "card" + card_id + "-back-label0",
             text: "card" + card_id + "-back-text0",
+          }
+          labels.push(contentBackValue);
+          let titleBackValue = {
+            container: "card" + card_id + "-titleback-label0",
+            text: "card" + card_id + "-titleback-text0",
           }
           labels.push(titleBackValue);
         }
@@ -453,17 +458,42 @@ export default {
   src: url('./fonts/Kanit/Kanit-Medium.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'IBM Plex Sans Condensed';
+  font-weight: 700;
+  /* bold */
+  font-style: normal;
+  src: url('./fonts/IBMPlexSansCondensed/IBMPlexSansCondensed-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'IBM Plex Sans Condensed';
+  font-weight: 500;
+  /* bold */
+  font-style: normal;
+  src: url('./fonts/IBMPlexSansCondensed/IBMPlexSansCondensed-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'IBM Plex Serif';
+  font-weight: 400;
+  /* normal */
+  font-style: normal;
+  src: url('./fonts/IBMPlexSerif/IBMPlexSerif-Regular.ttf') format('truetype');
+}
+
+
 /* @import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@200;400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;400;700&display=swap'); */
 
 :root {
-  --r-main-font: "Urbanist", sans-serif;
-  --r-heading-font: "Urbanist", sans-serif;
-  --r-heading-color: white;
+  --r-main-font: "IBM Plex Serif", sans-serif;
+  --r-heading-font: "IBM Plex Sans Condensed", sans-serif;
+  --r-heading-color:#24255D;
   --r-heading-margin: 0 0 0 0;
   --r-heading3-color: black;
   --r-heading4-color: black;
-  --r-heading1-size: 400px;
+  --r-heading1-size: 27px;
   --r-heading2-size: 300px;
   --r-heading3-size: 250px;
   --r-heading4-size: 240px;
@@ -496,7 +526,7 @@ export default {
 }
 
 .container h1 {
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .horizontal-center {
@@ -530,7 +560,7 @@ export default {
 }
 
 .black {
-  color: black;
+  color: #24255D;
 }
 
 .white {

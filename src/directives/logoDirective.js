@@ -17,58 +17,27 @@ export default {
             locallogoElements.forEach(logo => {
                 logo.style.backgroundImage = `url(${require('@/assets/logo-fr.png')})`;
             });
+            //compact logo
+            const compactlogoElements = el.querySelectorAll('.logo-compact');
+            compactlogoElements.forEach(logo => {
+                logo.style.backgroundImage = `url(${require('@/assets/logo-fr-compact.png')})`;
+            });
             const urlElements = el.querySelectorAll('.url');
             urlElements.forEach(url => {
                 url.textContent = "fresqueduclimat.org";
                 url.style.fontSize = `${14 * scaleFactor}px`;
             });
-            //front page
-            const logofrontContainerElements = el.querySelectorAll('.logo-container-front');
-            logofrontContainerElements.forEach(logo => {
-                logo.style.top = `${155 * scaleFactor}px`;
-                logo.style.left = `${62 * scaleFactor}px`;
-                logo.style.width = `${461 * scaleFactor}px`;
-                logo.style.height = `${128 * scaleFactor}px`;
+            const cardZeroElements = el.querySelectorAll('.logo-container-zero');
+            cardZeroElements.forEach(logo => {
+                logo.style.height = `${43 * scaleFactor}px`;
+                logo.style.top = `${285 * scaleFactor}px`;
             });
-            const outlineContainerElements = el.querySelectorAll('.outline-container');
-            outlineContainerElements.forEach(logo => {
-                logo.style.left = `${170 * scaleFactor}px`;
-                logo.style.top = `${268 * scaleFactor}px`;
-                logo.style.fontSize = `${21.5 * scaleFactor}px`;
-            });
-            if (print === 'false') { //if print is true, the position is defined in the logoDirective
-                //last page
-                const logoBigContainerElements = el.querySelectorAll('.logo-container-big');
-                logoBigContainerElements.forEach(logo => {
-                    logo.style.top = `${286 * scaleFactor}px`;
-                    logo.style.left = `${106 * scaleFactor}px`;
-                    logo.style.width = `${213 * scaleFactor}px`; 
-                    logo.style.height = `${57 * scaleFactor}px`;
-                });
-                const outlineBackContainerElements = el.querySelectorAll('.outline-container-back');
-                outlineBackContainerElements.forEach(outline => {
-                    outline.style.top = `${343 * scaleFactor}px`;
-                    outline.style.left = `${156 * scaleFactor}px`; 
-                    outline.style.fontSize = `${11 * scaleFactor}px`;
-                });
-            }
-            //small logos on each side of cards
-            const logoContainerElements = el.querySelectorAll('.logo-container');
-            logoContainerElements.forEach(logo => {
-                logo.style.top = `${33 * scaleFactor}px`; 
-                logo.style.left = `${434 * scaleFactor}px`; 
-                logo.style.width = `${125.6 * scaleFactor}px`; 
-                logo.style.height = `${34.4 * scaleFactor}px`; 
-            });
-            //small climatefresk logo should not appear on front page
-            const logoSmallContainerElements = el.querySelectorAll('.logo-container-small');
-            logoSmallContainerElements.forEach(logo => {
-                logo.style.top = `${1000 * scaleFactor}px`;
-            });
-            //small climatefresk logo should not appear on front page
-            const logofrontSmallContainerElements = el.querySelectorAll('.logo-container-front-small');
-            logofrontSmallContainerElements.forEach(logo => {
-                logo.style.top = `${1000 * scaleFactor}px`;
+            const cardAllElements = el.querySelectorAll('.logo-container');
+            cardAllElements.forEach(logo => {
+                logo.style.top = `${334 * scaleFactor}px`;
+                logo.style.left = `${253 * scaleFactor}px`;
+                logo.style.width = `${109 * scaleFactor}px`;
+                logo.style.height = `${31 * scaleFactor}px`;
             });
         }
 

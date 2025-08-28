@@ -1,14 +1,8 @@
 <template>
     <section :style="backgroundStyles">
         <div class="container">
-            <div :id="`card${cardNumber}-label0`" class="title">
+            <div :id="`card${cardNumber}-label0`" class="label title">
                 <h1 :id="`card${cardNumber}-text0`">{{ title }}</h1>
-            </div>
-            <div class="horizontal-center vertical-center label front-set-container">
-                <div class="label first-rectangle"></div>
-                <div class="label second-rectangle"></div>
-                <div class="label third-rectangle"></div>
-                <p class="label font-medium card-number white">{{ cardNumber }}</p>
             </div>
             <!-- <hr class="label border-white top-left-vertical">
             <hr class="label border-white top-left-horizontal">
@@ -23,18 +17,17 @@
     </section>
     <section>
         <div class="container">
-            <div :id="`card${cardNumber}-back-label0`" class="horizontal-center vertical-center label black content">
+            <!-- <div :id="`card${cardNumber}-label0`" class="label black title">
+                <h1 :id="`card${cardNumber}-text0`">{{ title }}</h1>
+            </div> -->
+            <div :id="`card${cardNumber}-titleback-label0`" class="label black title">
+                <h1 :id="`card${cardNumber}-titleback-text0`">{{ title }}</h1>
+            </div>
+            <div :id="`card${cardNumber}-back-label0`" class="label black content">
                 <p :id="`card${cardNumber}-back-text0`">{{ content }}</p>
             </div>
             <div class="label logo-container">
                 <div class="logo"></div>
-                <p class="url">climatefresk.org</p>
-            </div>
-            <div class="horizontal-center vertical-center label back-set-container">
-                <div class="label first-rectangle"></div>
-                <div class="label second-rectangle"></div>
-                <div class="label third-rectangle"></div>
-                <p class="label font-medium card-number white">{{ cardNumber }}</p>
             </div>
             <!-- <hr class="label border-black top-left-vertical">
             <hr class="label border-black top-left-horizontal">
@@ -129,37 +122,40 @@ export default {
 }
 
 .title {
-    position: absolute;
-    /* border: solid red 0.5px * var(--scale-factor)); */
-    top: calc(21.5px * var(--scale-factor-height));
-    left: calc(30.1px * var(--scale-factor-width));
-    width: calc(535px * var(--scale-factor-width));
-    height: calc(72.2px * var(--scale-factor-height));
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    white-space: nowrap;
+    /* border: solid red 0.5px; */
+    top: calc(40px * var(--scale-factor-height));
+    left: calc(40px * var(--scale-factor-width));
+    width: calc(318px * var(--scale-factor-width));
+    height: calc(60px * var(--scale-factor-height));
+    text-align: left;
+
 }
 
 .content {
-    /* border: solid red 0.5px * var(--scale-factor)); */
-    top: calc(105.8px * var(--scale-factor-height));
-    left: calc(34.4px * var(--scale-factor-width));
-    width: calc(533.2px * var(--scale-factor-width));
-    height: calc(228px * var(--scale-factor-height));
+    /* border: solid red 0.5px; */
+    top: calc(100px * var(--scale-factor-height));
+    left: calc(40px * var(--scale-factor-width));
+    width: calc(318px * var(--scale-factor-width));
+    height: calc(190px * var(--scale-factor-height));
+    text-align: left;
+    line-height: 12px; 
+}
+
+.title h1 {
+    font-size: calc(23px * var(--scale-factor));
 }
 
 .content p {
     /* font-size: calc(256px * var(--scale-factor)); */
-    font-size: calc(33px * var(--scale-factor));
+    font-size: calc(20px * var(--scale-factor));
 }
 
 /* default is en logo */
 .logo-container {
-    top: calc(18px * var(--scale-factor-height));
-    left: calc(435px * var(--scale-factor-width));
-    width: calc(123px * var(--scale-factor-width));
-    height: calc(48px * var(--scale-factor-height));
+    top: calc(330px * var(--scale-factor-height));
+    left: calc(281px * var(--scale-factor-width));
+    width: calc(80px * var(--scale-factor-width));
+    height: calc(31px * var(--scale-factor-height));
 }
 
 .logo {
@@ -189,54 +185,25 @@ export default {
     height: calc(79px * var(--scale-factor-height));
 }
 
-.first-rectangle {
-    background-color: #A4E0E7;
-    /* background-color: red; */
-    top: calc(6px * var(--scale-factor-height));
-    left: calc(13px * var(--scale-factor-width));
-    width: calc(48.1px * var(--scale-factor-width));
-    height: calc(64.5px * var(--scale-factor-height));
-    border-radius: 8.6%;
-    transform: rotate(10deg);
-    z-index: 1; /* au fond */
-}
-
-.second-rectangle {
-    background-color: #71CED0;
-    top: calc(6px * var(--scale-factor-height));
-    left: calc(13px * var(--scale-factor-width));
-    width: calc(48.1px * var(--scale-factor-width));
-    height: calc(64.5px * var(--scale-factor-height));
-    border-radius: 8.6%;
-    transform: rotate(-15deg);
-    z-index: 2; /* milieu */
-}
-
-.third-rectangle {
-    background-color: #00C6C1;
-    top: calc(8.6px * var(--scale-factor-height));
-    left: calc(13.8px * var(--scale-factor-width));
-    width: calc(48px * var(--scale-factor-width));
-    height: calc(64.5px * var(--scale-factor-height));
-    border-radius: 8.6%;
-    transform: rotate(-40deg);
-    z-index: 3; /* devant */
-}
-
 .card-number {
     z-index: 4;
     font-size: calc(34px * var(--scale-factor));
 }
 
+
 .set-one {
-    top: calc(340px * var(--scale-factor-height));
-    left: calc(28px * var(--scale-factor-width));
+    top: calc(327px * var(--scale-factor-height));
+    left: calc(16px * var(--scale-factor-width));
     width: calc(99px * var(--scale-factor-width));
     height: calc(70px * var(--scale-factor-height));
-    background-color: red;
-    padding-top: calc(9.5px * var(--scale-factor));
-    font-weight: 430;
-    font-size: calc(19px * var(--scale-factor));
+    font-weight: 500;
+    font-size: calc(30px * var(--scale-factor));
+}
+
+.set-one p {
+    font-family: "IBM Plex Sans Condensed", sans-serif;
+    font-weight: 600;
+    color : black;
 }
 
 .set-two {

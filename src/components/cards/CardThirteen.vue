@@ -1,29 +1,8 @@
 <template>
-    <CardBase :title="$t('V1C13L1')" :content="$t('V1C13L2')" :card-number="13" :background-front-image="`C13.${imageType}`">
-        <div id="card13-label1" class="horizontal-center vertical-center label orange card13-label1-position">
-            <p id="card13-text1" class="font-medium">{{ $t('V1C13L3') }}</p>
-        </div>
-        <div id="card13-label2" class="horizontal-center vertical-center label orange card13-label2-position">
-            <p id="card13-text2" class="font-medium">{{ $t('V1C13L4') }}</p>
-        </div>
-        <div id="card13-label3" class="horizontal-center vertical-center label red card13-label3-position">
-            <p id="card13-text3" class="font-medium">{{ $t('V1C13L5') }}</p>
-        </div>
-        <div id="card13-label4" class="horizontal-center vertical-center label red card13-label4-position">
-            <p id="card13-text4" class="font-medium">{{ $t('V1C13L6') }}</p>
-        </div>
-        <div id="card13-label5" class="horizontal-center vertical-center label card13-label5-position">
-            <p id="card13-text5" class="font-big">{{ $t('V1C13L7') }}</p>
-        </div>
-        <div id="card13-label6" class="horizontal-center vertical-center label card13-label6-position">
-            <p id="card13-text6" class="font-big">{{ $t('V1C13L8') }}</p>
-        </div>
-        <div id="card13-fixed-label3" class="horizontal-center vertical-center label card13-fixed-label3-position">
-            <p id="card13-fixed-text3" class="font-big">°C</p>
-        </div>
+    <CardBase :title="$t('V3C13L0')" :content="$t('V3C13L1')" :card-number="13" :background-front-image="`C13.${imageType}`">
         <template v-slot:back-content>
-            <div id="card13-back-label1" class="label white set-one">
-                <p id="card13-back-text1">{{ $t('V1C0L4') + ' ' + "1"}}</p>
+            <div id="card13-back-label1" class="label set-one">
+                <p id="card13-back-text1">{{ $t('V3C0L0') + ' ' + "1"}}</p>
             </div>
         </template>
     </CardBase>

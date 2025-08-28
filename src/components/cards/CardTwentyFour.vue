@@ -1,5 +1,5 @@
 <template>
-    <CardBase :title="$t('V1C24L1')" :content="$t('V1C24L2')" :card-number="24" :background-front-image="`C24.${imageType}`">
+    <CardBase :title="$t('V3C24L0')" :content="$t('V3C24L1')" :card-number="24" :background-front-image="`C24.${imageType}`">
         <div id="card24-label1" class="horizontal-center vertical-center label black card24-label1-position">
             <p id="card24-text1" class="font-small">{{ $t('V1C24L3') }}</p>
         </div>
@@ -7,8 +7,8 @@
             <p id="card24-text2" class="font-small">{{ $t('V1C999L90') }}</p>
         </div>    
         <template v-slot:back-content>
-            <div id="card24-back-label3" class="label white set-two">
-                <p id="card24-back-text3">{{ $t('V1C0L4') + ' ' + "2"}}</p>
+            <div id="card24-back-label3" class="label set-one">
+                <p id="card24-back-text3">{{ $t('V3C0L0') + ' ' + "2"}}</p>
             </div>
         </template>
     </CardBase>

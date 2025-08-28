@@ -3,14 +3,14 @@ import co2SubscriptDirective from "@/directives/co2SubscriptDirective.js";
 import { createApp } from "vue";
 import { createI18n } from "vue-i18n";
 import customCardFourtyFourDirective from "./directives/customCardFourtyFourDirective.js";
-import customCardZeroDirective from "./directives/customCardZeroDirective.js";
+// import customCardZeroDirective from "./directives/customCardZeroDirective.js";
 import customFont from "@/directives/customFontDirective";
-import customSizesDirective from "./directives/customSizesDirective.js";
+// import customSizesDirective from "./directives/customSizesDirective.js";
 import customTitleDivDirective from "./directives/customTitleDivDirective.js";
 import lineBreakDirective from "@/directives/lineBreakDirective.js";
 import lineSpacingDirective from "@/directives/lineSpacingDirective.js";
 import logoDirective from "./directives/logoDirective.js";
-import miniSizeDirective from "./directives/miniSizeDirective";
+// import miniSizeDirective from "./directives/miniSizeDirective";
 import noBreakDirective from "./directives/noBreakDirective.js";
 import printDirective from "./directives/printDirective.js";
 import qrcodeDirective from "./directives/qrcodeDirective";
@@ -35,64 +35,9 @@ async function fetchLanguageData(languageCode) {
 }
 
 const lang2locale = {
-  'de-DE': 'de',
   'en-GB': 'en',
   'fr-FR': 'fr',
-  'ja-JP': 'ja',
-  'vi-VN': 'vi',
-  'my-MM': 'my',
-  'pt-PT': 'pt',
-  'ro-RO': 'ro',
-  'sv-SE': 'sv',
-  'fi-FI': 'fi',
-  'nl-NL': 'nl',
-  'es-ES': 'es',
-  'es-LAT': 'lat',
-  'fa-IR': 'fa',
-  'id-ID': 'id',
-  'tr-TR': 'tr',
-  'hu-HU': 'hu',
-  'pt-BR': 'br',
-  'pl-PL': 'pl',
-  'ca-ES': 'ca',
-  'it-IT': 'it',
-  'ru-RU': 'ru',
-  'lt-LT': 'lt',
-  'nb-NO': 'nb',
-  'ar-AR': 'ar',
-  'bg-BG': 'bg',
-  'zh-CN': 'zh',
-  'zh-TPE': 'tpe',
-  'cs-CZ': 'cs',
-  'en-US': 'us',
-  'hy-AM': 'hy',
-  'mf-MU': 'mf',
-  'hr-HR': 'hr',
-  'co-FR': 'co',
-  'sr-SB' : 'sr',
-  'ne-NP' : 'ne',
-  'mk-MK' : 'mk',
-  "et-EE" : 'et',
-  "hi-IN" : 'hi',
-  "el-GR" : 'el',
-  "ml-IN" : 'ml',
-  "th-TH" : 'th',
-  "eo-EO" : 'eo',
-  "km-kh" : 'kh',
-  "cy-GB" : 'cy',
-  "rw-RW" : "rw",
-  "kk-KZ" : "kk",
-  "he-IL" : "he",
-  "zh-HK" : "hk",
-  "mn-MN" : "mn",
-  "da-DK" : "da",
-  "zh-TW" : "tw",
-  "ko-KR" : "ko",
-  "tg-TJ" : "tg",
-  "sl-SI" : "sl",
-  "kn-IN" : "kn",
-  "oc-ES" : "oc",
-  "ka-GE" : "ka"
+  'de-DE': 'de'
 }
 
 const languagesToFetch = Object.keys(lang2locale);
@@ -112,8 +57,8 @@ Promise.all(fetchPromises)
     });
     // Create the i18n instance only after fetching data
     const i18n = createI18n({
-      locale: "ru", // Replace with the desired default locale
-      fallbackLocale: "fr",
+      locale: "fr", // Replace with the desired default locale
+      fallbackLocale: "en",
       messages: messages,
     });
 
@@ -130,10 +75,10 @@ Promise.all(fetchPromises)
     app.directive('print', printDirective);
     app.directive('qr-code', qrcodeDirective);
     app.directive('no-break', noBreakDirective);
-    app.directive('card-zero', customCardZeroDirective);
+    //app.directive('card-zero', customCardZeroDirective);
     app.directive('card-fourtyfour', customCardFourtyFourDirective);
-    app.directive('custom-size', customSizesDirective);
-    app.directive('mini-size', miniSizeDirective);
+    //app.directive('custom-size', customSizesDirective);
+    //app.directive('mini-size', miniSizeDirective);
     app.directive('custom-font', customFont);
     app.mount("#app");
   })

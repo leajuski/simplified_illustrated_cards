@@ -1,5 +1,5 @@
 <template>
-    <CardBase :title="$t('V1C15L1')" :content="$t('V1C15L2')" :card-number="15" :background-front-image="`C15.${imageType}`" >
+    <CardBase :title="$t('V3C15L0')" :content="$t('V3C15L1')" :card-number="15" :background-front-image="`C15.${imageType}`" >
         <div id="card15-label1" class="horizontal-center label card15-label1-position">
             <p id="card15-text1" class="font-small">{{ $t('V1C15L10') }}</p>
         </div>
@@ -73,8 +73,8 @@
             <p id="card15-fixed-text5" class="font-big">SSP1-1.9</p>
         </div>
         <template v-slot:back-content>
-            <div id="card15-back-label8" class="label white set-three">
-                <p id="card15-back-text8">{{ $t('V1C0L4') + ' ' + "3"}}</p>
+            <div id="card15-back-label8" class="label set-one">
+                <p id="card15-back-text8">{{ $t('V3C0L0') + ' ' + "3"}}</p>
             </div>
         </template>  
     </CardBase>

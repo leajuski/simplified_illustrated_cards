@@ -133,20 +133,6 @@ export default {
     height: calc(61px * var(--scale-factor-height));
 } 
 
-.cc {
-    width: 100%;
-    height: 100%;
-    background-image: url('@/assets/creative-commons.png');
-    background-size: contain;
-}
-
-.cc-container {
-    top: calc(46px * var(--scale-factor-height));
-    left: calc(431.7px * var(--scale-factor-width));
-    width: calc(117.5px * var(--scale-factor-width));
-    height: calc(42px * var(--scale-factor-height));
-}
-
 .card44-label0-position {
     top: calc(46px * var(--scale-factor-height));
     left: calc(44.7px * var(--scale-factor-width));
