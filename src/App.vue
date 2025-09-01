@@ -85,28 +85,12 @@ import CardTwentyFour from "@/components/cards/CardTwentyFour.vue";
 import CardTwentyFive from "@/components/cards/CardTwentyFive.vue";
 import CardTwentySix from "@/components/cards/CardTwentySix.vue";
 import CardTwentySeven from "@/components/cards/CardTwentySeven.vue";
-import CardTwentyEight from "@/components/cards/CardTwentyEight.vue";
-import CardTwentyNine from "@/components/cards/CardTwentyNine.vue";
-import CardThirty from "@/components/cards/CardThirty.vue";
-import CardThirtyOne from "@/components/cards/CardThirtyOne.vue";
-import CardThirtyTwo from "@/components/cards/CardThirtyTwo.vue";
-import CardThirtyThree from "@/components/cards/CardThirtyThree.vue";
-import CardThirtyFour from "@/components/cards/CardThirtyFour.vue";
-import CardThirtyFive from "@/components/cards/CardThirtyFive.vue";
-import CardThirtySix from "@/components/cards/CardThirtySix.vue";
-import CardThirtySeven from "@/components/cards/CardThirtySeven.vue";
-import CardThirtyEight from "@/components/cards/CardThirtyEight.vue";
-import CardThirtyNine from "@/components/cards/CardThirtyNine.vue";
-import CardFourty from "@/components/cards/CardFourty.vue";
-import CardFourtyOne from "@/components/cards/CardFourtyOne.vue";
-import CardFourtyTwo from "@/components/cards/CardFourtyTwo.vue";
-import CardFourtyThree from "@/components/cards/CardFourtyThree.vue";
-import CardFourtyFour from "@/components/cards/CardFourtyFour.vue";
 import FrontCard from "@/components/cards/FrontCard.vue";
 
 export default {
   name: "App",
   components: {
+    FrontCard,
     CardZero,
     CardOne,
     CardTwo,
@@ -134,25 +118,7 @@ export default {
     CardTwentyFour,
     CardTwentyFive,
     CardTwentySix,
-    CardTwentySeven,
-    CardTwentyEight,
-    CardTwentyNine,
-    CardThirty,
-    CardThirtyOne,
-    CardThirtyTwo,
-    CardThirtyThree,
-    CardThirtyFour,
-    CardThirtyFive,
-    CardThirtySix,
-    CardThirtySeven,
-    CardThirtyEight,
-    CardThirtyNine,
-    CardFourty,
-    CardFourtyOne,
-    CardFourtyTwo,
-    CardFourtyThree,
-    FrontCard,
-    CardFourtyFour
+    CardTwentySeven
   },
   mounted() {
     Reveal.initialize({
@@ -173,7 +139,7 @@ export default {
   },
   methods: {
     adjustFontSize() {
-      const labels_max = [2, 0, 0, 0, 0, 0, 0, 0, 0, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+      const labels_max = [2, 0, 0, 0, 0, 0, 0, 0, 0, 7, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
       const labels = [];
       for (let card_id = 0; card_id <= labels_max.length - 1; card_id++) {
         let titleValue = {
@@ -202,7 +168,7 @@ export default {
         }
       }
 
-      //console.log(labels);
+      console.log(labels);
 
       labels.forEach(function (label) {
         const div = document.getElementById(label.container);
