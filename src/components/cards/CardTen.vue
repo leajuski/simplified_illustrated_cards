@@ -1,23 +1,23 @@
 <template>
     <CardBase :title="$t('V3C10L0')" :content="$t('V3C10L1')" :card-number="10" :background-front-image="`C10.${imageType}`">
         <div id="card10-label1" class="horizontal-center label black card10-label1-position">
-            <p id="card10-text1" class="font-small">{{ $t('V3C10L3') }}</p>
-            </div>
-            <div id="card10-label2" class="horizontal-center label black card10-label2-position">
-                <p id="card10-text2" class="font-small">{{ $t('V3C10L4') }}</p>
-            </div>
-            <div id="card10-label3" class="horizontal-center label white card10-label3-position">
-                <p id="card10-text3" class="font-small">{{ $t('V3C10L5') }}</p>
-            </div>
-            <div id="card10-label4" class="horizontal-center label white card10-label4-position">
-                <p id="card10-text4" class="font-small">{{ $t('V3C10L6') }}</p>
-            </div>
-            <div id="card10-label5" class="horizontal-center label white card10-label5-position">
-                <p id="card10-text5" class="font-small">{{ $t('V3C10L7') }}</p>
-            </div>
-            <div id="card10-label6" class="horizontal-center label white card10-label6-position">
-                <p id="card10-text6" class="font-small">{{ $t('V3C10L8') }}</p>
-            </div>
+        <p id="card10-text1" class="font-small">{{ $t('V3C10L3') }}</p>
+        </div>
+        <div id="card10-label2" class="horizontal-center label black card10-label2-position">
+            <p id="card10-text2" class="font-small">{{ $t('V3C10L4') }}</p>
+        </div>
+        <div id="card10-label3" class="horizontal-center label white card10-label3-position">
+            <p id="card10-text3" class="font-small">{{ $t('V3C10L5') }}</p>
+        </div>
+        <div id="card10-label4" class="horizontal-center label white card10-label4-position">
+            <p id="card10-text4" class="font-small">{{ $t('V3C10L6') }}</p>
+        </div>
+        <div id="card10-label5" class="horizontal-center label white card10-label5-position">
+            <p id="card10-text5" class="font-small">{{ $t('V3C10L7') }}</p>
+        </div>
+        <div id="card10-label6" class="horizontal-center label white card10-label6-position">
+            <p id="card10-text6" class="font-small">{{ $t('V3C10L8') }}</p>
+        </div>
         <template v-slot:back-content>
             <div id="card10-back-label1" class="label set-one">
                 <p id="card10-back-text1">{{ $t('V3C0L0') + ' ' + "3"}}</p>
