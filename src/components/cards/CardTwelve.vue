@@ -13,8 +13,8 @@
             <p id="card12-text4" class="font-small">{{ $t('V3C12L5') }}</p>
         </div>
         <template v-slot:back-content>
-            <div id="card12-back-label6" class="label set-one">
-                <p id="card12-back-text6">{{ $t('V3C0L0') + ' ' + "2"}}</p>
+            <div id="card12-back-label1" class="label set-one">
+                <p id="card12-back-text1">{{ $t('V3C0L0') + ' ' + "2"}}</p>
             </div>
         </template>
     </CardBase>

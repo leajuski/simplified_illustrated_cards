@@ -193,17 +193,21 @@ export default {
 
 .set-one {
     top: calc(327px * var(--scale-factor-height));
-    left: calc(16px * var(--scale-factor-width));
-    width: calc(99px * var(--scale-factor-width));
-    height: calc(70px * var(--scale-factor-height));
+    left: calc(40px * var(--scale-factor-width));
+    width: calc(120px * var(--scale-factor-width));
+    height: calc(32px * var(--scale-factor-height));
     font-weight: 500;
     font-size: calc(30px * var(--scale-factor));
+    /* border: red solid 1px; */
+    display: flex;
+    align-items: center;
 }
 
 .set-one p {
     font-family: "IBM Plex Sans Condensed", sans-serif;
     font-weight: 600;
     color : black;
+    text-align: left;
 }
 
 .set-two {

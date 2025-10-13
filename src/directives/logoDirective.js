@@ -22,16 +22,6 @@ export default {
             compactlogoElements.forEach(logo => {
                 logo.style.backgroundImage = `url(${require('@/assets/logo-fr-compact.png')})`;
             });
-            const urlElements = el.querySelectorAll('.url');
-            urlElements.forEach(url => {
-                url.textContent = "fresqueduclimat.org";
-                url.style.fontSize = `${14 * scaleFactor}px`;
-            });
-            const cardZeroElements = el.querySelectorAll('.logo-container-zero');
-            cardZeroElements.forEach(logo => {
-                logo.style.height = `${43 * scaleFactor}px`;
-                logo.style.top = `${285 * scaleFactor}px`;
-            });
             const cardAllElements = el.querySelectorAll('.logo-container');
             cardAllElements.forEach(logo => {
                 logo.style.top = `${334 * scaleFactor}px`;
@@ -90,38 +80,28 @@ export default {
 
         // SPANISH ES-ES
         if (currentLocale === 'es' || currentLocale === 'lat'|| currentLocale === 'ca') { 
+            //small logo
             const logoElements = el.querySelectorAll('.local-logo');
             logoElements.forEach(logo => {
                 logo.style.backgroundImage = `url(${require('@/assets/logo-es.png')})`;
             });
-            //front page
-            const logoContainerElements = el.querySelectorAll('.logo-container-front');
-            logoContainerElements.forEach(logo => {
-                logo.style.top = `${151 * scaleFactor}px`;
-                logo.style.left = `${62 * scaleFactor}px`;
-                logo.style.width = `${455 * scaleFactor}px`;
-                logo.style.height = `${172 * scaleFactor}px`;
+            //big logo
+            const locallogoElements = el.querySelectorAll('.local-logo');
+            locallogoElements.forEach(logo => {
+                logo.style.backgroundImage = `url(${require('@/assets/logo-es.png')})`;
             });
-            const outlineContainerElements = el.querySelectorAll('.outline-container');
-            outlineContainerElements.forEach(logo => {
-                logo.style.top = `${273 * scaleFactor}px`;
-                logo.style.left = `${181 * scaleFactor}px`;
-                logo.style.fontSize = `${21.5 * scaleFactor}px`;
+            //compact logo
+            const compactlogoElements = el.querySelectorAll('.logo-compact');
+            compactlogoElements.forEach(logo => {
+                logo.style.backgroundImage = `url(${require('@/assets/logo-es-compact.png')})`;
             });
-            if (print === 'false') { //if print is true, the position is defined in the logoDirective
-            //last page
-            const logoBigContainerElements = el.querySelectorAll('.logo-container-big');
-                logoBigContainerElements.forEach(logo => {
-                    logo.style.top = `${282 * scaleFactor}px`;
-                    logo.style.left = `${111 * scaleFactor}px`;
-                    logo.style.width = `${224 * scaleFactor}px`; 
-                });
-                const outlineBackContainerElements = el.querySelectorAll('.outline-container-back');
-                outlineBackContainerElements.forEach(outline => {
-                    outline.style.top = `${344 * scaleFactor}px`;
-                    outline.style.left = `${166 * scaleFactor}px`; 
-                });
-            }
+            const cardAllElements = el.querySelectorAll('.logo-container');
+            cardAllElements.forEach(logo => {
+                logo.style.top = `${334 * scaleFactor}px`;
+                logo.style.left = `${253 * scaleFactor}px`;
+                logo.style.width = `${109 * scaleFactor}px`;
+                logo.style.height = `${31 * scaleFactor}px`;
+            });
         }
 
         // GERMAN DE-DE

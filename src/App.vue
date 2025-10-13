@@ -153,6 +153,11 @@ export default {
             text: "card" + card_id + "-back-text0",
           }
           labels.push(contentBackValue);
+          let contentSetValue = {
+            container: "card" + card_id + "-back-label1",
+            text: "card" + card_id + "-back-text1",
+          }
+          labels.push(contentSetValue);
           let titleBackValue = {
             container: "card" + card_id + "-titleback-label0",
             text: "card" + card_id + "-titleback-text0",
@@ -168,7 +173,7 @@ export default {
         }
       }
 
-      console.log(labels);
+      // console.log(labels);
 
       labels.forEach(function (label) {
         const div = document.getElementById(label.container);
