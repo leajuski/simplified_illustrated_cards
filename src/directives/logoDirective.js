@@ -33,49 +33,33 @@ export default {
 
         // DUTCH NL-NL
         if (currentLocale === 'nl') { 
+            //small logo
             const logoElements = el.querySelectorAll('.local-logo');
             logoElements.forEach(logo => {
-                logo.style.backgroundImage = `url(${require('@/assets/logo-en.png')})`;
+                logo.style.backgroundImage = `url(${require('@/assets/logo-nl.png')})`;
             });
-            //small climatefresk logo should not appear
-            const logoSmallContainerElements = el.querySelectorAll('.logo-container-small');
-            logoSmallContainerElements.forEach(logo => {
-                logo.style.top = `${1000 * scaleFactor}px`;
+            //big logo
+            const locallogoElements = el.querySelectorAll('.local-logo');
+            locallogoElements.forEach(logo => {
+                logo.style.backgroundImage = `url(${require('@/assets/logo-nl.png')})`;
             });
-            //small climatefresk logo should not appear
-            const logofrontSmallContainerElements = el.querySelectorAll('.logo-container-front-small');
-            logofrontSmallContainerElements.forEach(logo => {
-                logo.style.top = `${1000 * scaleFactor}px`;
+            //compact logo
+            const compactlogoElements = el.querySelectorAll('.logo-compact');
+            compactlogoElements.forEach(logo => {
+                logo.style.backgroundImage = `url(${require('@/assets/logo-nl-compact.png')})`;
             });
-            //front page
-            const logoContainerElements = el.querySelectorAll('.logo-container-front');
-            logoContainerElements.forEach(logo => {
-                logo.style.top = `${148 * scaleFactor}px`;
-                logo.style.left = `${67 * scaleFactor}px`;
-                logo.style.width = `${428 * scaleFactor}px`;
-                logo.style.height = `${180 * scaleFactor}px`; 
+            //bottom right logo
+            const containerlogoElements = el.querySelectorAll('.logo');
+            containerlogoElements.forEach(logo => {
+                logo.style.backgroundImage = `url(${require('@/assets/logo-nl.png')})`;
             });
-            const outlineContainerElements = el.querySelectorAll('.outline-container');
-            outlineContainerElements.forEach(logo => {
-                logo.style.left = `${196 * scaleFactor}px`;
-                logo.style.top = `${300 * scaleFactor}px`;
-                logo.style.width = `${350 * scaleFactor}px`;
+            const cardAllElements = el.querySelectorAll('.logo-container');
+            cardAllElements.forEach(logo => {
+                logo.style.top = `${330 * scaleFactor}px`;
+                logo.style.left = `${260 * scaleFactor}px`;
+                logo.style.width = `${107* scaleFactor}px`;
+                logo.style.height = `${40 * scaleFactor}px`;
             });
-            if (print === 'false') { //if print is true, the position is defined in the logoDirective
-            //last page
-            const logoBigContainerElements = el.querySelectorAll('.logo-container-big');
-                logoBigContainerElements.forEach(logo => {
-                    logo.style.top = `${277 * scaleFactor}px`;
-                    logo.style.left = `${115 * scaleFactor}px`;
-                    logo.style.width = `${204 * scaleFactor}px`;
-                    logo.style.height = `${87 * scaleFactor}px`;
-                });
-                const outlineBackContainerElements = el.querySelectorAll('.outline-container-back');
-                outlineBackContainerElements.forEach(outline => {
-                    outline.style.top = `${352 * scaleFactor}px`;
-                    outline.style.left = `${175 * scaleFactor}px`;
-                });
-            }
         }
 
         // SPANISH ES-ES
@@ -95,48 +79,49 @@ export default {
             compactlogoElements.forEach(logo => {
                 logo.style.backgroundImage = `url(${require('@/assets/logo-es-compact.png')})`;
             });
+            //bottom right logo
+            const containerlogoElements = el.querySelectorAll('.logo');
+            containerlogoElements.forEach(logo => {
+                logo.style.backgroundImage = `url(${require('@/assets/logo-es.png')})`;
+            });
             const cardAllElements = el.querySelectorAll('.logo-container');
             cardAllElements.forEach(logo => {
-                logo.style.top = `${334 * scaleFactor}px`;
-                logo.style.left = `${253 * scaleFactor}px`;
-                logo.style.width = `${109 * scaleFactor}px`;
-                logo.style.height = `${31 * scaleFactor}px`;
+                logo.style.top = `${330 * scaleFactor}px`;
+                logo.style.left = `${260 * scaleFactor}px`;
+                logo.style.width = `${100* scaleFactor}px`;
+                logo.style.height = `${40 * scaleFactor}px`;
             });
         }
 
         // GERMAN DE-DE
         if (currentLocale === 'de') { 
+             //small logo
             const logoElements = el.querySelectorAll('.local-logo');
             logoElements.forEach(logo => {
                 logo.style.backgroundImage = `url(${require('@/assets/logo-de.png')})`;
             });
-            //front page
-            const logoContainerElements = el.querySelectorAll('.logo-container-front');
-            logoContainerElements.forEach(logo => {
-                logo.style.top = `${151 * scaleFactor}px`;
-                logo.style.left = `${62 * scaleFactor}px`;
-                logo.style.width = `${455 * scaleFactor}px`;
-                logo.style.height = `${152 * scaleFactor}px`;
+            //big logo
+            const locallogoElements = el.querySelectorAll('.local-logo');
+            locallogoElements.forEach(logo => {
+                logo.style.backgroundImage = `url(${require('@/assets/logo-de.png')})`;
             });
-            const outlineContainerElements = el.querySelectorAll('.outline-container');
-            outlineContainerElements.forEach(logo => {
-                logo.style.top = `${273 * scaleFactor}px`;
-                logo.style.left = `${181 * scaleFactor}px`;
-                logo.style.fontSize = `${24 * scaleFactor}px`;
+            //compact logo
+            const compactlogoElements = el.querySelectorAll('.logo-compact');
+            compactlogoElements.forEach(logo => {
+                logo.style.backgroundImage = `url(${require('@/assets/logo-de-compact.png')})`;
             });
-            if (print === 'false') { //if print is true, the position is defined in the logoDirective
-                //last page
-                const logoBigContainerElements = el.querySelectorAll('.logo-container-big');
-                logoBigContainerElements.forEach(logo => {
-                    logo.style.top = `${282 * scaleFactor}px`;
-                    logo.style.height = `${77 * scaleFactor}px`;
-                });
-                const outlineBackContainerElements = el.querySelectorAll('.outline-container-back');
-                outlineBackContainerElements.forEach(outline => {
-                    outline.style.top = `${348 * scaleFactor}px`;
-                    outline.style.left = `${188 * scaleFactor}px`; 
-                });
-            }
+            //bottom right logo
+            const containerlogoElements = el.querySelectorAll('.logo');
+            containerlogoElements.forEach(logo => {
+                logo.style.backgroundImage = `url(${require('@/assets/logo-de.png')})`;
+            });
+            const cardAllElements = el.querySelectorAll('.logo-container');
+            cardAllElements.forEach(logo => {
+                logo.style.top = `${330 * scaleFactor}px`;
+                logo.style.left = `${260 * scaleFactor}px`;
+                logo.style.width = `${100* scaleFactor}px`;
+                logo.style.height = `${33 * scaleFactor}px`;
+            });
         }
 
         // PT-PT

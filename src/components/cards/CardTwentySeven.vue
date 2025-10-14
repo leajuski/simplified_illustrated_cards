@@ -36,8 +36,8 @@ export default {
 <!-- pour une résolution de 470x693 -->
 <style>
 .card27-label1-position {
-    top: calc(137px * var(--scale-factor));
-    left: calc(290px * var(--scale-factor));
+    top: calc(121px * var(--scale-factor));
+    left: calc(275px * var(--scale-factor));
     width: calc(105px * var(--scale-factor));
     height: calc(39px * var(--scale-factor));
     font-size: calc(15px * var(--scale-factor));
