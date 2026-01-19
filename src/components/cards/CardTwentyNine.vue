@@ -1,7 +1,7 @@
 <template>
     <section data-background-size="cover">
         <div class="container">
-            <div id="card29-label0" v-text-align class="label black card29-label0-position" >
+            <div id="card29-label0" v-text-align class="label card29-label0-position" >
                 <p id="card29-text0">{{ $t('V3C29L0') }}</p>
             </div>
             <div class="label logo-container-back">

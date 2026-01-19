@@ -2,7 +2,7 @@
     <CardBase :title="$t('V3C6L0')" :content="$t('V3C6L1')" :card-number="6" :background-front-image="`C6.${imageType}`" >
         <template v-slot:back-content>
             <div id="card6-back-label1" class="label set-one">
-                <p id="card6-back-text1">{{ $t('V3C0L0') + ' ' + "2"}}</p>
+                <p id="card6-back-text1">{{ $t('V3C0L0') + ' ' + "1"}}</p>
             </div>
         </template>    
     </CardBase>

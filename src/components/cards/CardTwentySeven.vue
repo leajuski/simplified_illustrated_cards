@@ -11,7 +11,7 @@
         </div>
         <template v-slot:back-content>
             <div id="card27-back-label1" class="label set-one">
-                <p id="card27-back-text1">{{ $t('V3C0L0') + ' ' + "4"}}</p>
+                <p id="card27-back-text1">{{ $t('V3C0L0') + ' ' + "3"}}</p>
             </div>
         </template>
     </CardBase>

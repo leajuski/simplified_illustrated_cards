@@ -85,7 +85,7 @@ export default {
 
 .front-card-label2-position {
     top: calc(191px * var(--scale-factor));
-    left: calc(203px * var(--scale-factor));
+    left: calc(201px * var(--scale-factor));
     width: calc(337px * var(--scale-factor));
     height: calc(17px * var(--scale-factor));
     font-size: calc(10px * var(--scale-factor));
@@ -228,7 +228,9 @@ hr.label.border-black.bottom-right-horizontal {
 }
 .bottom-right-horizontal {
     width: 7px;
-    top: calc(calc(389px * var(--scale-factor)) - 15px);
-    left: calc(calc(389pxx* var(--scale-factor)) - 7px);
+    top: calc(calc(389px * var(--scale-factor)) - 14px);
+    left: calc(calc(389px* var(--scale-factor)) - 7px);
 }
 </style>
+
+

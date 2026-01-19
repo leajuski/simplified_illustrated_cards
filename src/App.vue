@@ -32,10 +32,10 @@
       <CardTwentySix />
       <CardTwentySeven />
       <CardThirtyFour />
+      <CardTwentyEight />
       <CardTwentyNine />
       <CardThirty />
       <CardThirtyThree />
-      <CardTwentyEight />
       <CardThirtyOne />
       <CardThirtyTwo />
       <CardThirtyFive />
