@@ -9,15 +9,16 @@ export default {
                     code.style.backgroundImage = `url(${require('@/assets/qr-code/qr-siteweb-en.png')})`;
                 });
             }
+            if (currentLocale === 'en') {
+                const qrcodeKeyElements = el.querySelectorAll('.qr-code-key');
+                qrcodeKeyElements.forEach(code => {
+                    code.style.backgroundImage = `url(${require('@/assets/qr-code/qr-code-key-en.png')})`;
+                });
+            }
             if (currentLocale === 'fr' || currentLocale === 'co') {
                 const qrcodeElements = el.querySelectorAll('.qr-code-siteweb');
                 qrcodeElements.forEach(code => {
                     code.style.backgroundImage = `url(${require('@/assets/qr-code/qr-siteweb-fr.png')})`;
-                });
-
-                const qrcodeKeyElements = el.querySelectorAll('.qr-code-key');
-                qrcodeKeyElements.forEach(code => {
-                    code.style.backgroundImage = `url(${require('@/assets/qr-code/qr-code.png')})`;
                 });
             }
             // ES-ES

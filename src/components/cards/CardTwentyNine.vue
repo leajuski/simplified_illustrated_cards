@@ -91,7 +91,7 @@ export default {
     top: calc(39px * var(--scale-factor-height));
     left: calc(282px * var(--scale-factor-width));
     width: calc(74px * var(--scale-factor-width));
-    height: calc(77px * var(--scale-factor-height));
+    height: calc(74px * var(--scale-factor-height));
 }
 
 

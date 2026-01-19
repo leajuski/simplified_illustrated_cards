@@ -20,7 +20,7 @@
 .qr-code-key {
     width: 100%;
     height: 100%;
-    background-image: url('@/assets/qr-code/qr-code-key-en.png');
+    background-image: url('@/assets/qr-code/qr-code-key-fr.png');
     background-size: contain;
 }
 
