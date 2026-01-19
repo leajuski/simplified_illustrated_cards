@@ -85,6 +85,8 @@ import CardTwentyFour from "@/components/cards/CardTwentyFour.vue";
 import CardTwentyFive from "@/components/cards/CardTwentyFive.vue";
 import CardTwentySix from "@/components/cards/CardTwentySix.vue";
 import CardTwentySeven from "@/components/cards/CardTwentySeven.vue";
+import CardTwentyEight from "@/components/cards/CardTwentyEight.vue";
+import CardTwentyNine from "@/components/cards/CardTwentyNine.vue";
 import FrontCard from "@/components/cards/FrontCard.vue";
 
 export default {
@@ -118,7 +120,9 @@ export default {
     CardTwentyFour,
     CardTwentyFive,
     CardTwentySix,
-    CardTwentySeven
+    CardTwentySeven,
+    CardTwentyEight,
+    CardTwentyNine
   },
   mounted() {
     Reveal.initialize({
@@ -139,7 +143,7 @@ export default {
   },
   methods: {
     adjustFontSize() {
-      const labels_max = [2, 0, 0, 0, 0, 0, 0, 0, 0, 7, 7, 0, 5, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4]
+      const labels_max = [2, 0, 0, 0, 0, 0, 0, 0, 0, 7, 7, 0, 5, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 4, 1, 1]
       const labels = [];
       for (let card_id = 0; card_id <= labels_max.length - 1; card_id++) {
         let titleValue = {
@@ -147,7 +151,7 @@ export default {
           text: "card" + card_id + "-text0",
         }
         labels.push(titleValue);
-        if (card_id != 0 && card_id != 43 && card_id != 44) {
+        if (card_id != 0 && card_id != 28 && card_id != 29) {
           let contentBackValue = {
             container: "card" + card_id + "-back-label0",
             text: "card" + card_id + "-back-text0",
@@ -180,6 +184,7 @@ export default {
         const string = document.getElementById(label.text);
         const divWidth = div.offsetWidth;
         const divHeight = div.offsetHeight;
+        // console.log(string)
         let style = window.getComputedStyle(string);
         let fontSizeWithPx = style.getPropertyValue('font-size');
         let fontSize = parseFloat(fontSizeWithPx);

@@ -23,3 +23,11 @@ export default {
     },
 };
 </script>
+
+<style>
+
+#card1-text0 {
+    color : white;
+}
+
+</style>

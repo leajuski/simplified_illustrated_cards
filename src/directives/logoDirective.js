@@ -27,7 +27,21 @@ export default {
                 logo.style.top = `${334 * scaleFactor}px`;
                 logo.style.left = `${253 * scaleFactor}px`;
                 logo.style.width = `${109 * scaleFactor}px`;
-                logo.style.height = `${31 * scaleFactor}px`;
+                logo.style.height = `${29 * scaleFactor}px`;
+            });
+            const cardBackElements = el.querySelectorAll('.logo-container-back');
+            cardBackElements.forEach(logo => {
+                logo.style.top = `${277 * scaleFactor}px`;
+                logo.style.left = `${93 * scaleFactor}px`;
+                logo.style.width = `${203 * scaleFactor}px`;
+                logo.style.height = `${55 * scaleFactor}px`;
+            });
+            const cardBackOutlineElements = el.querySelectorAll('.outline-container-back');
+            cardBackOutlineElements.forEach(logo => {
+                logo.style.top = `${330 * scaleFactor}px`;
+                logo.style.left = `${122 * scaleFactor}px`;
+                logo.style.width = `${200 * scaleFactor}px`;
+                logo.style.height = `${17 * scaleFactor}px`;
             });
         }
 

@@ -8,7 +8,7 @@
                 <p>{{ $t('V3C0L2') }}</p>
             </div>
             <div class="label white front-card-label2-position">
-                <p>{{ "Climate Fresk - " + $t('V3C0L1') + " - " + $t('V3C0L2') + " - 20/08/2025"}}</p>
+               <p>{{ "Climate Fresk - " + $t('V3C0L1') + " - " + $t('V3C0L2') + " - " + $t('V3C0L4') + " - 15/01/2026"}}</p>
             </div>
             <!-- <div class="label logo-container-front">
                 <div class="local-logo"></div>
@@ -84,12 +84,11 @@ export default {
 }
 
 .front-card-label2-position {
-    top: calc(196px * var(--scale-factor));
-    left: calc(196px * var(--scale-factor));
-    width: calc(333px * var(--scale-factor));
+    top: calc(191px * var(--scale-factor));
+    left: calc(203px * var(--scale-factor));
+    width: calc(337px * var(--scale-factor));
     height: calc(17px * var(--scale-factor));
     font-size: calc(10px * var(--scale-factor));
-
     transform: rotate(-90deg);
     font-weight: 500;
     /* border : solid red 0.5px * var(--scale-factor)); */
@@ -131,10 +130,10 @@ export default {
     width: 100%;
     height: 100%;
     box-sizing: border-box;
-    border-top: calc(39px * var(--scale-factor)) solid #00acb3;
-    border-left: calc(39px * var(--scale-factor)) solid #00acb3;
-    border-bottom: calc(39px * var(--scale-factor)) solid #e30613;
-    border-right: calc(39px * var(--scale-factor)) solid #e30613;
+    border-top: calc(31px * var(--scale-factor)) solid #00acb3;
+    border-left: calc(31px * var(--scale-factor)) solid #00acb3;
+    border-bottom: calc(31px * var(--scale-factor)) solid #e30613;
+    border-right: calc(31px * var(--scale-factor)) solid #e30613;
 }
 
 section hr.label {
