@@ -1,9 +1,9 @@
 <template>
-    <CardBase :title="$t('V1C2L1')" :content="$t('V1C2L2')" :card-number="2"
+    <CardBase :title="$t('V3C2L0')" :content="$t('V3C2L1')" :card-number="2"
         :background-front-image="`C2.${imageType}`" >
         <template v-slot:back-content>
-            <div id="card2-back-label2" class="label white set-two">
-                <p id="card2-back-text2">{{ $t('V1C0L4') + ' ' + "2"}}</p>
+            <div id="card2-back-label1" class="label black set-one">
+                <p id="card2-back-text1">{{ $t('V3C0L0') + ' ' + "2"}}</p>
             </div>
         </template>
     </CardBase>

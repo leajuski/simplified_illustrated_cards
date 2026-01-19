@@ -3,10 +3,16 @@ export default {
         const currentLocale = binding.instance?.$i18n?.locale;
         const print = process.env.VUE_APP_PRINT;
         if (print === 'false') {
-            if (currentLocale === 'en') {
+            if (currentLocale === '') {
                 const qrcodeElements = el.querySelectorAll('.qr-code-siteweb');
                 qrcodeElements.forEach(code => {
                     code.style.backgroundImage = `url(${require('@/assets/qr-code/qr-siteweb-en.png')})`;
+                });
+            }
+            if (currentLocale === 'en') {
+                const qrcodeKeyElements = el.querySelectorAll('.qr-code-key');
+                qrcodeKeyElements.forEach(code => {
+                    code.style.backgroundImage = `url(${require('@/assets/qr-code/qr-code-key-en.png')})`;
                 });
             }
             if (currentLocale === 'fr' || currentLocale === 'co') {
@@ -36,7 +42,7 @@ export default {
                     code.style.backgroundImage = `url(${require('@/assets/qr-code/qr-siteweb-pt.png')})`;
                 });
             } 
-    }      
+        }        
     
     },
 };

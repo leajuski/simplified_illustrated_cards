@@ -1,25 +1,34 @@
 <template>
-    <CardBase :title="$t('V1C28L1')" :content="$t('V1C28L2')" :card-number="28" :background-front-image="`C28.${imageType}`" >
-        <template v-slot:back-content>
-            <div id="card38-back-label1" class="label white set-five">
-                <p id="card38-back-text1">{{ $t('V1C0L4') + ' ' + "5"}}</p>
+    <section data-background-size="cover">
+        <div class="container">
+            <div id="card28-label0" class="label title">
+                <h1 id="card28-text0">{{ $t('V3C28L0') }}</h1>
             </div>
-        </template>
-    </CardBase>
+            <div class="label qr-code-key-container">
+                <div class="qr-code-key"></div>
+            </div>
+        </div>
+    </section>
 </template>
 
 <script>
-import CardBase from "@/components/base/CardBase.vue";
-
-export default {
-    name: "CardOne",
-    components: {
-        CardBase,
-    },
-    data() {
-        return {
-            imageType: process.env.VUE_APP_IMAGE_TYPE || 'png',
-        };
-    },
-};
 </script>
+
+<!-- pour une résolution de 470x693 -->
+<style>
+
+.qr-code-key {
+    width: 100%;
+    height: 100%;
+    background-image: url('@/assets/qr-code/qr-code-key-fr.png');
+    background-size: contain;
+}
+
+.qr-code-key-container {
+    top: calc(90px * var(--scale-factor));
+    left: calc(73px * var(--scale-factor));
+    width: calc(249px * var(--scale-factor));
+    height: calc(249px * var(--scale-factor));
+}
+
+</style>
