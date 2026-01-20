@@ -1,5 +1,5 @@
 <template>
-  <div v-logo v-custom-font v-qr-code v-card-fourtyfour v-no-break v-print
+  <div v-logo v-custom-font v-qr-code v-no-break v-print
     v-customtitlediv v-linespacing v-linebreak v-text-direction v-co2-subscript id="app" class="reveal">
     <div class="slides">
       <FrontCard />
@@ -31,23 +31,8 @@
       <CardTwentyFive />
       <CardTwentySix />
       <CardTwentySeven />
-      <CardThirtyFour />
       <CardTwentyEight />
       <CardTwentyNine />
-      <CardThirty />
-      <CardThirtyThree />
-      <CardThirtyOne />
-      <CardThirtyTwo />
-      <CardThirtyFive />
-      <CardThirtySix />
-      <CardThirtySeven />
-      <CardThirtyEight />
-      <CardThirtyNine />
-      <CardFourty />
-      <CardFourtyOne />
-      <CardFourtyTwo />
-      <CardFourtyThree />
-      <CardFourtyFour />
     </div>
   </div>
 </template>
@@ -205,27 +190,6 @@ export default {
 </script>
 
 <style>
-
-@font-face {
-  font-family: 'Urbanist';
-  font-weight: 700;
-  font-style: normal;
-  src: url('./fonts/Urbanist/Urbanist-Bold.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Urbanist';
-  font-weight: 400;
-  font-style: normal;
-  src: url('./fonts/Urbanist/Urbanist-Regular.ttf') format('truetype');
-}
-
-@font-face {
-  font-family: 'Urbanist';
-  font-weight: 500;
-  font-style: normal;
-  src: url('./fonts/Urbanist/Urbanist-Medium.ttf') format('truetype');
-}
 
 @font-face {
   font-family: 'Noto Sans TC';

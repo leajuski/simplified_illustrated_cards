@@ -2,15 +2,11 @@ import App from "./App.vue";
 import co2SubscriptDirective from "@/directives/co2SubscriptDirective.js";
 import { createApp } from "vue";
 import { createI18n } from "vue-i18n";
-import customCardFourtyFourDirective from "./directives/customCardFourtyFourDirective.js";
-// import customCardZeroDirective from "./directives/customCardZeroDirective.js";
 import customFont from "@/directives/customFontDirective";
-// import customSizesDirective from "./directives/customSizesDirective.js";
 import customTitleDivDirective from "./directives/customTitleDivDirective.js";
 import lineBreakDirective from "@/directives/lineBreakDirective.js";
 import lineSpacingDirective from "@/directives/lineSpacingDirective.js";
 import logoDirective from "./directives/logoDirective.js";
-// import miniSizeDirective from "./directives/miniSizeDirective";
 import noBreakDirective from "./directives/noBreakDirective.js";
 import printDirective from "./directives/printDirective.js";
 import qrcodeDirective from "./directives/qrcodeDirective";
@@ -59,7 +55,7 @@ Promise.all(fetchPromises)
     });
     // Create the i18n instance only after fetching data
     const i18n = createI18n({
-      locale: "en", // Replace with the desired default locale
+      locale: "es", // Replace with the desired default locale
       fallbackLocale: "en",
       messages: messages,
     });
@@ -77,10 +73,6 @@ Promise.all(fetchPromises)
     app.directive('print', printDirective);
     app.directive('qr-code', qrcodeDirective);
     app.directive('no-break', noBreakDirective);
-    //app.directive('card-zero', customCardZeroDirective);
-    app.directive('card-fourtyfour', customCardFourtyFourDirective);
-    //app.directive('custom-size', customSizesDirective);
-    //app.directive('mini-size', miniSizeDirective);
     app.directive('custom-font', customFont);
     app.mount("#app");
   })

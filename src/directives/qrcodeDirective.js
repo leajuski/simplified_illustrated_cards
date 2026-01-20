@@ -27,6 +27,11 @@ export default {
                 qrcodeElements.forEach(code => {
                     code.style.backgroundImage = `url(${require('@/assets/qr-code/qr-siteweb-es.png')})`;
                 });
+
+                const qrcodeKeyElements = el.querySelectorAll('.qr-code-key');
+                qrcodeKeyElements.forEach(code => {
+                    code.style.backgroundImage = `url(${require('@/assets/qr-code/qr-code-key-en.png')})`;
+                });
             }
             // DE-DE
             if (currentLocale === 'de') {
@@ -34,12 +39,22 @@ export default {
                 qrcodeElements.forEach(code => {
                     code.style.backgroundImage = `url(${require('@/assets/qr-code/qr-siteweb-de.png')})`;
                 });
+
+                const qrcodeKeyElements = el.querySelectorAll('.qr-code-key');
+                qrcodeKeyElements.forEach(code => {
+                    code.style.backgroundImage = `url(${require('@/assets/qr-code/qr-code-key-en.png')})`;
+                });
             } 
-            // PT-PT
-            if (currentLocale === 'pt' || currentLocale === 'br') {
+            // NL-NL
+            if (currentLocale === 'nl') {
                 const qrcodeElements = el.querySelectorAll('.qr-code-siteweb');
                 qrcodeElements.forEach(code => {
-                    code.style.backgroundImage = `url(${require('@/assets/qr-code/qr-siteweb-pt.png')})`;
+                    code.style.backgroundImage = `url(${require('@/assets/qr-code/qr-siteweb-en.png')})`;
+                });
+
+                const qrcodeKeyElements = el.querySelectorAll('.qr-code-key');
+                qrcodeKeyElements.forEach(code => {
+                    code.style.backgroundImage = `url(${require('@/assets/qr-code/qr-code-key-en.png')})`;
                 });
             } 
         }        
