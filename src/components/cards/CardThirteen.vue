@@ -16,6 +16,9 @@
             <p id="card13-text5" class="font-small">{{ $t('V3C13L6') }}</p>
         </div>
         <template v-slot:back-content>
+            <div class="label black number">
+                <p>18</p>
+            </div> 
             <div id="card13-back-label1" class="label set-one">
                 <p id="card13-back-text1">{{ $t('V3C0L0') + ' ' + "3"}}</p>
             </div>

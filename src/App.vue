@@ -4,33 +4,33 @@
     <div class="slides">
       <FrontCard />
       <CardZero />
-      <CardOne />
-      <CardTwo />
-      <CardThree />
-      <CardFour />
-      <CardFive />
       <CardSix />
-      <CardSeven />
-      <CardHeight />
-      <CardNine />
-      <CardTen />
-      <CardEleven />
       <CardTwelve />
-      <CardThirteen />
+      <CardFour />
       <CardFourteen />
-      <CardFifteen />
+      <CardFive />
+      <CardOne />
+      <CardTen />
+      <CardThree />
       <CardSixteen />
+      <CardSeven />
+      <CardTwo />
+      <CardHeight />
+      <CardEleven />
+      <CardNine /> 
       <CardSeventeen />
-      <CardEighteen />
       <CardNineteen />
-      <CardTwenty />
       <CardTwentyOne />
-      <CardTwentyTwo />
-      <CardTwentyThree />
-      <CardTwentyFour />
-      <CardTwentyFive />
-      <CardTwentySix />
+      <CardThirteen />
+      <CardFifteen />
       <CardTwentySeven />
+      <CardTwenty />
+      <CardEighteen />
+      <CardTwentySix />
+      <CardTwentyTwo />
+      <CardTwentyFive />
+      <CardTwentyThree /> 
+      <CardTwentyFour />
       <CardTwentyEight />
       <CardTwentyNine />
     </div>

@@ -55,7 +55,7 @@ Promise.all(fetchPromises)
     });
     // Create the i18n instance only after fetching data
     const i18n = createI18n({
-      locale: "es", // Replace with the desired default locale
+      locale: "fr", // Replace with the desired default locale
       fallbackLocale: "en",
       messages: messages,
     });
