@@ -192,6 +192,27 @@ export default {
 <style>
 
 @font-face {
+  font-family: 'Urbanist';
+  font-weight: 700;
+  font-style: normal;
+  src: url('./fonts/Urbanist/Urbanist-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Urbanist';
+  font-weight: 400;
+  font-style: normal;
+  src: url('./fonts/Urbanist/Urbanist-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Urbanist';
+  font-weight: 500;
+  font-style: normal;
+  src: url('./fonts/Urbanist/Urbanist-Medium.ttf') format('truetype');
+}
+
+@font-face {
   font-family: 'Noto Sans TC';
   font-weight: 700;
   /* bold */
@@ -415,7 +436,7 @@ export default {
 }
 
 @font-face {
-  font-family: 'IBM Plex Serif';
+  font-family: 'Urbanist';
   font-weight: 400;
   /* normal */
   font-style: normal;
@@ -427,8 +448,8 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@200;400;700&display=swap'); */
 
 :root {
-  --r-main-font: "IBM Plex Serif", sans-serif;
-  --r-heading-font: "IBM Plex Sans Condensed", sans-serif;
+  --r-main-font: "Urbanist", sans-serif;
+  --r-heading-font: "Urbanist", sans-serif;
   --r-heading-color:#24255D;
   --r-heading-margin: 0 0 0 0;
   --r-heading3-color: black;
