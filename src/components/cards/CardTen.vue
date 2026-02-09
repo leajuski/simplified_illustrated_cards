@@ -19,6 +19,9 @@
             <p id="card10-text6" class="font-small">{{ $t('V3C10L8') }}</p>
         </div>
         <template v-slot:back-content>
+            <div class="label black number">
+                <p>7</p>
+            </div> 
             <div id="card10-back-label1" class="label set-one">
                 <p id="card10-back-text1">{{ $t('V3C0L0') + ' ' + "1"}}</p>
             </div>
@@ -113,8 +116,8 @@ export default {
 
 .card10-label5-position {
     top: calc(140px * var(--scale-factor));
-    left: calc(315px * var(--scale-factor));
-    width: calc(70px * var(--scale-factor));
+    left: calc(307px * var(--scale-factor));
+    width: calc(66px * var(--scale-factor));
     height: calc(35px * var(--scale-factor));
     justify-content: center;
     font-size: 13px;
@@ -128,10 +131,10 @@ export default {
 }
 
 .card10-label6-position {
-    top: calc(88px * var(--scale-factor));
-    left: calc(272px * var(--scale-factor));
-    width: calc(105px * var(--scale-factor));
-    height: calc(37px * var(--scale-factor));
+    top: calc(76px * var(--scale-factor));
+    left: calc(267px * var(--scale-factor));
+    width: calc(97px * var(--scale-factor));
+    height: calc(47px * var(--scale-factor));
     justify-content: left;
     /* border: solid red; */
     font-size: 13px;

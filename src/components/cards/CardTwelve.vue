@@ -13,6 +13,9 @@
             <p id="card12-text4" class="font-small">{{ $t('V3C12L5') }}</p>
         </div>
         <template v-slot:back-content>
+            <div class="label black number">
+                <p>2</p>
+            </div> 
             <div id="card12-back-label1" class="label set-one">
                 <p id="card12-back-text1">{{ $t('V3C0L0') + ' ' + "1"}}</p>
             </div>
@@ -40,7 +43,7 @@ export default {
 <style>
 .card12-label1-position {
     top: calc(191px * var(--scale-factor));
-    left: calc(17px * var(--scale-factor));
+    left: calc(25px * var(--scale-factor));
     width: calc(105px * var(--scale-factor));
     height: calc(20px * var(--scale-factor));
     /* font-size: calc(68px * var(--scale-factor)); */
@@ -56,7 +59,7 @@ export default {
 
 .card12-label2-position {
     top: calc(300px * var(--scale-factor));
-    left: calc(17px * var(--scale-factor));
+    left: calc(25px * var(--scale-factor));
     width: calc(105px * var(--scale-factor));
     height: calc(20px * var(--scale-factor));
     text-align: right;

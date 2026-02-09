@@ -4,22 +4,11 @@
             <div :id="`card${cardNumber}-label0`" class="label title">
                 <h1 :id="`card${cardNumber}-text0`">{{ title }}</h1>
             </div>
-            <!-- <hr class="label border-white top-left-vertical">
-            <hr class="label border-white top-left-horizontal">
-            <hr class="label border-white top-right-vertical">
-            <hr class="label border-white top-right-horizontal">
-            <hr class="label border-white bottom-left-vertical">
-            <hr class="label border-white bottom-left-horizontal">
-            <hr class="label border-white bottom-right-vertical">
-            <hr class="label border-white bottom-right-horizontal"> -->
             <slot></slot>
         </div>
     </section>
     <section>
         <div class="container">
-            <!-- <div :id="`card${cardNumber}-label0`" class="label black title">
-                <h1 :id="`card${cardNumber}-text0`">{{ title }}</h1>
-            </div> -->
             <div :id="`card${cardNumber}-titleback-label0`" class="label black title">
                 <h1 :id="`card${cardNumber}-titleback-text0`">{{ title }}</h1>
             </div>
@@ -29,14 +18,6 @@
             <div class="label logo-container">
                 <div class="logo"></div>
             </div>
-            <!-- <hr class="label border-black top-left-vertical">
-            <hr class="label border-black top-left-horizontal">
-            <hr class="label border-black top-right-vertical">
-            <hr class="label border-black top-right-horizontal">
-            <hr class="label border-black bottom-left-vertical">
-            <hr class="label border-black bottom-left-horizontal">
-            <hr class="label border-black bottom-right-vertical">
-            <hr class="label border-black bottom-right-horizontal"> -->
             <slot name="back-content"></slot>
         </div>
     </section>
@@ -129,6 +110,17 @@ export default {
     height: calc(60px * var(--scale-factor-height));
     text-align: left;
 
+}
+
+.number {
+    top: calc(18px * var(--scale-factor-height));
+    left: calc(353px * var(--scale-factor-width));
+    width: calc(20px * var(--scale-factor-width));
+    height: calc(20px * var(--scale-factor-height));
+    font-size : 12px;
+    opacity: 0.5;
+    text-align: center;
+    
 }
 
 .content {

@@ -1,6 +1,9 @@
 <template>
     <CardBase :title="$t('V3C14L0')" :content="$t('V3C14L1')" :card-number="14" :background-front-image="`C14.${imageType}`" >
         <template v-slot:back-content>
+            <div class="label black number">
+                <p>4</p>
+            </div> 
             <div id="card14-back-label1" class="label set-one">
                 <p id="card14-back-text1">{{ $t('V3C0L0') + ' ' + "1"}}</p>
             </div>
